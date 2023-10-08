@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229872779333",
+    "project_id": "quotevibe-dc3e0",
+    "storage_bucket": "quotevibe-dc3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229872779333:android:7f4c49f52c41224c77232c",
+        "android_client_info": {
+          "package_name": "com.example.quotevibe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxV89pAw_N5OvHzuPh5oAAMs9bwkl7KwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
