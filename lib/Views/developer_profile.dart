@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -16,6 +18,17 @@ class _DeveloperProfileState extends State<DeveloperProfile> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: Colors.red,
+            )),
+      ),
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
@@ -57,7 +70,7 @@ class _DeveloperProfileState extends State<DeveloperProfile> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
-                  height: width * 0.05,
+                  height: Platform.isAndroid ? height * 0.05 : width * 0.05,
                   child: InkWell(
                     child: Image.network(
                         "https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png"),
@@ -73,8 +86,7 @@ class _DeveloperProfileState extends State<DeveloperProfile> {
                   ),
                 ),
                 SizedBox(
-                  height: width * 0.05,
-                  width: width * 0.1,
+                  height: Platform.isAndroid ? height * 0.05 : width * 0.05,
                   child: InkWell(
                     child: Image.network(
                         "https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480-rw"),
@@ -90,7 +102,7 @@ class _DeveloperProfileState extends State<DeveloperProfile> {
                   ),
                 ),
                 SizedBox(
-                  height: width * 0.05,
+                  height: Platform.isAndroid ? height * 0.05 : width * 0.05,
                   child: InkWell(
                     child: Image.network(
                         "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"),
