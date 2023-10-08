@@ -47,13 +47,13 @@ class _HomeScreenState extends State<HomeScreen> {
                               height: height * 0.1,
                               color: Colors.black,
                             ),
-                            Expanded(
+                            Flexible(
                               child: Center(
                                 child: Text(
                                   quote["title"],
                                   style: GoogleFonts.caveat(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: height * 0.07),
+                                      fontSize: height * 0.04),
                                 ),
                               ),
                             ),
